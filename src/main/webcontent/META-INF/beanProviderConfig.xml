@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- start of annotation-config    -->
+<!--    &lt;!&ndash; indicates spring auto wiring has to take place, and we don't individually insert beans &ndash;&gt;-->
+<!--    &lt;!&ndash; checks for @autowired annotation in all the beans defined, and finds if any bean are there for that type or not and injects directly    &ndash;&gt;-->
+<!--    <context:annotation-config/> -->
+
+<!--    <bean id="defaultAddress" class="com.hello.beans.Address" />-->
+<!--    <bean id="dummyAddress" class="com.hello.beans.Address" scope="prototype">-->
+<!--        <constructor-arg name="id" value="1" type="int"/>-->
+<!--        <constructor-arg name="cityName" value="Amaravati" />-->
+<!--        <constructor-arg name="landMark" value="Municipal office" />-->
+<!--    </bean>-->
+
+<!--    <bean id="defaultCustomer" class="com.hello.beans.Customer"/>-->
+<!--    <bean id="dummyCustomer" class="com.hello.beans.Customer" init-method="initCustomer" destroy-method="destroyCustomer">-->
+<!--        <constructor-arg name="id" value="1" />-->
+<!--        <constructor-arg name="name" value="Avinash" />-->
+<!--        <constructor-arg ref="dummyAddress" />-->
+<!--    </bean>-->
+
+<!--    <bean id="annotationAddress" class="com.hello.beans.Address"/>-->
+<!--    <bean id="annotateCustomer" class="com.hello.beans.Customer"/>-->
+    <!-- end of annotation-config    -->
+
+    <!-- start of component-scan    -->
+    <!-- component-scan check for beans by going through all the classes and check for annotations @Component, @Repository   -->
+    <context:component-scan base-package="com.hello" />
+    <!-- start of component-scan    -->
+
+</beans>

@@ -1,0 +1,8 @@
+com/hello/beans/Address.class
+com/hello/config/BeanProviderConfig.class
+com/hello/HelloSpringApplication.class
+com/hello/dto/SignupRequest.class
+com/hello/controller/UserController.class
+com/hello/beans/annotated/AnnotatedAddress.class
+com/hello/beans/Customer.class
+com/hello/beans/annotated/AnnotatedCustomer.class

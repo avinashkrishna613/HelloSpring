@@ -1,0 +1,22 @@
+<web-app>
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>authHandlerFilter</filter-name>
+        <filter-class>com.hello.filter.AuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>authHandlerFilter</filter-name>
+<!--        <url-pattern>/*</url-pattern>-->
+        <servlet-name>default</servlet-name>
+    </filter-mapping>
+
+</web-app>
